@@ -2,6 +2,9 @@ import time
 import pandas as pd
 import numpy as np
 
+# This script analyzes bikeshare data from US cities
+# It allows filtering by city, month and day of the week
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
