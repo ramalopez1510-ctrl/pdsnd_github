@@ -16,4 +16,5 @@ new_york_city.cvs
 
 ### Credits
 UDACITY DATA SCIENCE NANODEGREE
+PANDAS DOCUMENTATION 
 
