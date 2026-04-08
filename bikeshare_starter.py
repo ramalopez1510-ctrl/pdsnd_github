@@ -1,3 +1,7 @@
+# Bikeshare Data Analysis
+# This script explores US bikeshare data and provides statistics
+# based on user input for city, month, and day filters.
+
 import time
 import pandas as pd
 import numpy as np
