@@ -9,7 +9,9 @@ import numpy as np
 # This script analyzes bikeshare data from US cities
 # It allows filtering by city, month and day of the week
 
-CITY_DATA = { 'chicago': 'chicago.csv',
+SEPARATOR = '-' * 40
+
+city_data = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
@@ -22,7 +24,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Welcome! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
 
@@ -32,7 +34,7 @@ def get_filters():
     # get user input for day of week (all, monday, tuesday, ... sunday)
 
 
-    print('-'*40)
+    print(SEPARATOR)
     return city, month, day
 
 
@@ -68,7 +70,7 @@ def time_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
 
 
 def station_stats(df):
@@ -87,7 +89,7 @@ def station_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
 
 
 def trip_duration_stats(df):
@@ -103,7 +105,7 @@ def trip_duration_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
 
 
 def user_stats(df):
@@ -122,7 +124,7 @@ def user_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
 
 
 def main():
